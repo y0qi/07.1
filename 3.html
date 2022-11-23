@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: rgb(173, 182, 185);
+        }
+
+        * {
+            border: 1px solid black
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .baise {
+            background-color:rgb(45, 82, 113);
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .mg {
+            margin: 8px;
+        }
+
+        .mgr {
+            margin-right: 8px;
+        }
+
+        .mgt {
+            margin-top: 8px;
+        }
+        .hui {
+            background-color: rgb(54, 80, 105);
+        }
+        .juzhong {
+            align-items:center
+        }
+        .daohang{
+            padding: 10px 20px;
+            border-bottom:1px solid black ;
+        }
+       @media (max-width: 600px){
+        .cebian{
+            display: none;
+        }
+        .neirong{
+            flex-direction: column;
+        }
+        .shuju{
+            flex-direction: column;
+        }
+        .youqu{
+            margin-left:8px ;
+        }
+        .mg0{
+            margin-right: 0;
+
+        }
+        .gao{
+            height: 500px;
+        }
+    }
+
+    </style>
+</head>
+
+<body class="flex">
+    <!--侧边-->
+    <div style="width: 100px;" class="flex baise column cebian">
+        <!--头像区-->
+        <div style="height: 100px; align-items:center ; justify-content: center; margin: 1px; " class="flex column hui ">
+            <img src="https://y0qi.github.io/07.1/c.png" alt="" srcset="" style="height: 60px; width: 60px; 
+           
+            border: 1px solid rgb(54, 80, 105);
+            border-radius: 20%;">
+            不知道
+
+        </div>
+         <div style="border-top: 1px solid black;" class="daohang " >导航</div>
+         <div class="daohang " >导航</div>
+         <div class="daohang " >导航</div>
+         <div class="daohang " >导航</div>
+         <div class="daohang " >导航</div>
+         <div class="daohang " >导航</div>
+         
+    </div>
+    <!--主区-->
+    <div  class="flex flex1 column ">
+        <!--头部-->
+        <div style="height:100px;" class=" hui mg">
+         </div>
+        <!--内容-->
+        <div style="overflow: auto;" class="flex  neirong ">
+            
+            <!--左区-->
+            <div style="flex:3" class="flex  column mg">
+                <!--数据区-->
+                <div class="flex shuju gao">
+                    <!--数据块-->
+                    <div style="height: 200px;" class="  flex1 mgr hui mg0"></div>
+                    <div style="height: 200px;" class="  flex1 mgr hui mg0"></div>
+                    <div style="height: 200px;" class="  flex1 mgr hui mg0"></div>
+                    <div style="height: 200px;" class="  flex1 mgr hui mg0"></div>                   
+                    <div style="height: 200px;" class="  flex1 hui mg0"></div>                               
+                </div>
+                <!--leibiao-->
+                <div class="flex column">
+                    <div class=" mgt hui " style="height: 150px;"></div>
+                    <div class=" mgt hui " style="height: 150px;"></div>
+                    
+                  
+                    
+                  
+                </div>
+
+            </div>
+            <!--右区  -->
+            <div class=" flex flex1  column mgr mgt youqu ">
+                <!--1qu-->
+                <div style="height: 200px;" class="hui"></div>
+                <!--2qu-->
+                <div style="height: 200px;" class="hui mgt"></div>
+                <!--2qu-->
+                <div style="height: 200px;" class="mgt hui"></div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
